@@ -165,7 +165,6 @@ def main():
             if rtype != data_types.DOWNLOAD:
                 process_share(record, rtype, pipe)
 
-
         timer.stop()
         statsd.incr('lisa.process_ip', rate=0.01)  # 1% sample rate
 
